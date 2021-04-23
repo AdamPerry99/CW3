@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <!-- seo meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Football, Soccer, Left Foot, Left Footed Centre Back, Centre Back, Manchester City, City, Spurs, Tottenham, Arsenal, Gabriel, Mari, Stones, Dias, Laporte, Vertonghen, Pep, Guardiola, Arteta">
+        <meta name="description" content="The left footed centre back is becoming increasingly more valuable in the modern game, influencing the biggest clubs around the world. ">
+        <meta name="web_author" content="Adam Perry">
+        <meta name="language" content="English">
+    <!-- title and tab icon -->
+        <title>Rise of the Left Footed Centre Back</title>
+        <link rel="icon" href="https://i.ibb.co/C1N8Pwy/footballicon.png">
+
+    <!-- calling uikit components -->
+    	<link type="text/css" rel="stylesheet" href="js/uikit-2.27.5/css/uikit.almost-flat.min.css" />
+      <link type="text/css" rel="stylesheet" href="js/uikit-2.27.5/css/components/sticky.almost-flat.min.css" />
+      <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/uikit-2.27.5/js/uikit.min.js"></script>
+      <script type="text/javascript" src="js/uikit-2.27.5/js/components/sticky.min.js"></script>
+
+    <!-- indoc css -->
+      <style>
+
+        #headimg{
+          opacity: 0.4;
+        }
+
+        /* text adjustments */
+        h1.uk-heading-large{
+          color: black;
+        }
+
+        .uk-article-divider{
+          border: 1px solid #141520;
+        }
+
+        .uk-navbar{
+          z-index: 100;
+          color: #141520;
+        }
+
+
+        .uk-link-text{
+          color: #007EC6;
+        }
+
+        .bg{
+          background-color: #b7dbac;
+        }
+
+        li{
+          font-size: 18px;
+          line-height: 1.6em;
+          color: #141622;
+        }
+
+        table{
+          width: 100%;
+        }
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 4px;
+          text-align: center;
+          width: 12.5%
+        }
+        th {
+          background-color: #141622;
+          color: white;
+        }
+        td {
+          background-color: #FFFFFF;
+          color: #141622;
+        }
+
+        footer{
+          height: 15vh;
+          background-color: #141622;
+          position: relative;
+        }
+
+        .footertext{
+          position: absolute;
+          left: 20%;
+          top: 50%;
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          color: white;
+        }
+
+        .socials {
+          position: absolute;
+          right: 20%;
+          top: 50%;
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+
+      </style>
+
+  </head>
+
+  <body>
+
+    <!-- header section including an image, title, byline, and smoth scroll chevron -->
+    <figure class="uk-overlay uk-hidden-small">
+      <img id="headimg" src="https://i.ibb.co/kHmrHXm/headercw3.jpg" alt="blank" border="0">
+  		<figcaption class="uk-overlay-panel uk-flex uk-flex-center uk-flex-middle uk-text-center">
+  			<div>
+  				<h1 class="uk-heading-large">The Rise of the Left Footed Centre Back</h1>
+  				<h3 style="color: black">Adam Perry - 23/04/2021</h3>
+  				<a href="#def" data-uk-smooth-scroll><i class="uk-icon-chevron-down uk-icon-medium" style="color: black"></i></a>
+  			</div>
+  		</figcaption>
+  	</figure>
+
+    <!-- navigation bar with smoothscroll and scrollspy, adapted from uikit examples -->
+    <nav class="uk-navbar" data-uk-sticky="{clsactive: 'uk-navbar-attached', top: -100, animation: 'uk-animation-slide-top'}">
+      <a href="#headimg" class="uk-navbar-brand uk-hidden-small">The Rise of the Left Footed Centre Back</a>
+      <ul class="uk-navbar-nav uk-hidden-small" data-uk-scrollspy-nav="{closest: 'li', smoothscroll: true}">
+        <li><a href="#def">Definitions</a></li>
+        <li><a href="#pep">Pep's Ideals</a></li>
+        <li><a href="#examples">Examples</a></li>
+        <li><a href="#pass">Pass Data</a></li>
+        <li><a href="#team">Team by Team</a></li>
+        <li><a href="#move">On The Move</a></li>
+        <li><a href="#fin">Are They Better?</a></li>
+      </ul>
+    </nav>
+
+<!-- to set the bacground colour -->
+<div class="bg">
+
+<!-- main article body -->
+<div class="uk-article uk-width-medium-6-10 uk-container-center">
+
+<!-- definitions -->
+  <p id="def" class="uk-text-large" style="padding-top: 25px;">Data used in this article has been collected from <a class="uk-link-text" href="https://fbref.com/en/">FBRef.</a> Their definitions for terms used in this article are:</p>
+  <ul class="uk-list">
+    <li><b>Progressive Pass</b> - A completed 10 yard pass towards the opponents goal, excluding passes in the defending 40% of the pitch.</li>
+    <li><b>Final Third Entry</b> - A completed pass that enters the attacking third of the pitch, excluding set pieces.</li>
+    <li><b>Medium Pass</b> - A pass between 15 and 30 yards.</li>
+    <li><b>Long Pass</b> - A pass over 30 yards.</li>
+    <li><b>Progressive Distance</b> - The total distance of completed passes travelling towards an opponents goal.</li>
+  </ul>
+
+<!-- pep section/intro -->
+  <hr id="pep" class="uk-article-divider">
+    <p  class="uk-text-large">For Manchester City's FA Cup Semi Final against Chelsea, Pep Guardiola faced a difficult decision at centre back. Should he play John Stones alongside Rúben Dias, his most effective partnership this season, or follow his footballing philosophy and play Aymeric Laporte because his left foot would provide balance to the team?</p>
+    <p class="uk-text-large">Pep stuck to his philosophy and went with the left footer, Laporte. Pep's neccesity for his ideals got the better of him, contributing to <a class="uk-link-text" href="https://www.bbc.co.uk/sport/football/56725442">City's 1-0 defeat</a> and exit from the cup but this same relentless pursuit of ideals was well founded based on the rising success of the left footed centre back.</p>
+    <p class="uk-text-large"><a class="uk-link-text" href="https://youtu.be/GYTKNIsAzis?t=171">Speaking 15 months prior</a>, Pep Guardiola hailed Aymeric Laporte on his return from injury in a 1-0 victory over Sheffield United: "He was incredible, we missed him a lot. He has something we do not have in this squad - his left foot in a central defender."</p>
+    <p class="uk-text-large">Pep continued highlighting Laporte's absence, saying: "In many actions to build up, to make our player quicker, better, we do not have it. It is not because the other players are not good, but because he [Laporte] has the only left foot."</p>
+    <p class="uk-text-large">Having a left footed centre back opens up greater options within build up play due to the passing angles they can create. As a result, they can play passes that a right footed player could not and help progress the ball more effectively.</p>
+
+    <hr id="examples" class="uk-article-divider">
+
+<!-- examples sections including photoshop graphics -->
+    <p class="uk-text-large">Manchester City's goal against Wolves in 2019 highlights the benefit of Laporte's left foot. As he recieves the ball from Stones (5), Laporte (14) has few options as Wolves are occupying the passing lanes. In this situation, the natural option for a right footer would be to play the ball to Sané (19) which would force the him to drop deeper and slow down the City attack.</p>
+    <figure class="uk-align-center uk-margin-top uk-width-1-2">
+      <img src="https://i.ibb.co/zb9y2rd/laportewolves1.jpg" alt="laportewolves1" border="0">
+    </figure>
+    <p class="uk-text-large">Laporte is able to let the ball to run across his body, opening up a passing angle and pick out Sané's run. Laporte is also able to curve the ball slightly in order to avoid the Wolves defenders which would be far more difficult with a right footed player.</p>
+    <figure class="uk-align-center uk-margin-top uk-width-1-2">
+      <img src="https://i.ibb.co/QFH8svJ/laportewolves2.jpg" alt="laportewolves2" border="0">
+    </figure>
+    <p class="uk-text-large" style="padding-bottom: 25px;">Sané meets the ball without having to break stride, squaring it to Jesus (33) for an easy finish. A goal made possible by Laporte's left foot.</p>
+
+    <p class="uk-text-large">The benefit of a left footed centre back on the left side of defence is also apparent during the first phases of build up. Here Xhaka (34) plays the ball to Gabriel (6) whilst 3 Liverpool players rush to close down, leaving Gabriel with limited options.</p>
+    <figure class="uk-align-center uk-margin-top uk-width-1-2">
+      <img src="https://i.ibb.co/1L9QDR8/Gabriel-Liverppol.jpg" alt="Gabriel-Liverppol" border="0">
+    </figure>
+    <p class="uk-text-large">Due to being comfortable on his left foot, Gabriel is able to let the ball roll across his body, giving him extra space to play his pass. As a result he is able to clip the ball up the pitch, finding Nketiah (30) and kickstarting an Arsenal attack.</p>
+    <figure class="uk-align-center uk-margin-top uk-width-1-2">
+      <img src="https://i.ibb.co/KG1SSHd/Gabriel-Liverppol1.jpg" alt="Gabriel-Liverppol1" border="0">
+    </figure>
+    <hr id="pass" class="uk-article-divider">
+
+<!-- data section including r charts -->
+    <p class="uk-text-large">Pep Guardiola and Mikel Arteta have both embraced left footed centre backs over the past few years, with Guardiola buying Aymeric Laporte and Nathan Aké, and Arteta buying Gabriel Magalhães and Pablo Marí to fill that role. Arteta's signing of Marí was the first left footed centre back signed by Arsenal since Thomas Vermaelan joined in July 2009.</p>
+    <p class="uk-text-large">Tottenham are another club who have benefitted from a left footed centre back in recent years with Jan Vertonghen, a mainstay of the Spurs backline until his departure last August.</p>
+    <p class="uk-text-large">With the angles these players can create for their teams, ball progression increases as left footed centre backs, on the left side of the pitch, are able to play within the flow of the game rather than shuffling the ball onto their right foot.</p>
+    <figure class="uk-align-center uk-margin-top uk-width-3-4">
+        <img src="https://i.ibb.co/1q4kfnK/teams-pp-fte1.jpg" alt="teams-pp-fte1" border="0">
+    </figure>
+    <p class="uk-text-large">Since the start of the 2018/19 season, Manchester City, Arsenal and Tottenham's centre backs have contributed nottably more progreesive passes when the pairing consists of a left footer and a right footer, rather than two right footers. In the cases of Arsenal and Tottenham, progressive passes from a left and right footed pairing see a 41% and 43% increase respectively.</p>
+    <p class="uk-text-large" style="padding-bottom: 40px;">For Arsenal and Tottenham, final third entries both increase when playing with a left footer and a right footer. Manchester City, however, have less final third entries. This may be because they are less reliant on their centre backs for incisive final third passes, and with the increased ball progression from the left and right foot combination, their more advanced players have more opportunity to play the final third entries.</p>
+
+    <p class="uk-text-large">Playing with a left footed centre back also saw an increase in the number of 15-30 yard passes. As seen in the Gabriel example, a left footed centre back is able to open up their body and create new passing angles in a way a right footer playing on the left cannot. Tottenham in particular saw a significant increase, playing an extra 7 medium range passes per game with Jan Vertonghen on the pitch.<p>
+      <figure class="uk-align-center uk-margin-top uk-width-3-4">
+          <img src="https://i.ibb.co/RpZFVzy/mediumpassattempted.jpg" alt="mediumpassattempted" border="0">
+      </figure>
+    <p class="uk-text-large" style="padding-top:25px;">The increase in attempted medium range passes also came with an increase in pass completion for both Arsenal and Tottenham. Manchester City's medium pass completion was slightly lower than it was with two right footers at the back.</p>
+    <figure class="uk-align-center uk-margin-top uk-width-3-4">
+        <img src="https://i.ibb.co/PwJWQKN/mediumpasspercentage.jpg" alt="mediumpasspercentage" border="0">
+    </figure>
+    <p class="uk-text-large" style="padding-top:25px;">When playing with a left footed centre back, Manchester City and Tottenham attempt a greater volume of passes over 30 yards. With playing out from the back becoming increasingly common, centre backs tend to get pressed more and often find themselves in a similar position to Gabriel from the example above. Being able to create a better passing angle allows a left footer to get the ball out of their feet and up the pitch.</p>
+    <figure class="uk-align-center uk-margin-top uk-width-3-4">
+      <img src="https://i.ibb.co/xgWvNN3/longpassattempted.jpg" alt="longpassattempted" border="0">
+    </figure>
+    <p class="uk-text-large" style="padding-top: 25px;">Despite the increase in volume, the percentage of long passes completed is lower for all three clubs. Arsenal in particular see a large drop off of just over 7% in their long passing accuracy.</p>
+    <figure class="uk-align-center uk-margin-top uk-width-3-4">
+      <img src="https://i.ibb.co/SdKYy4b/Rplot06.jpg" alt="Rplot06" border="0">
+    </figure>
+    <p class="uk-text-large">Arsenal's drop off could be attributed to personnel. Neither Gabriel nor Marí are adept long passers despite being good at short and medium range. With the way Arteta wants to play, Arsenal predominantly play short and medium range passes to progress up the pitch so it is likely a high number of long balls from the left footed centre backs are clearances.</p>
+
+    <hr id="team" class="uk-article-divider">
+
+<!-- team by team section including r charts -->
+    <p class="uk-text-large">In possession of the ball, having a left footer and a right footer at centre back often helps progress the ball more effectively. But this season, Manchester City's most effective partnership has been two right footers, John Stones and Rúben Dias.</p>
+    <p class="uk-text-large">When playing with a left footed centre back this season, City are averaging just under 5 fewer progressive passes than they did with one last season. This could be down to Aymeric Laporte struggling with Covid-19 at the start of the season, a lack of training, the loss of an outlet like Leroy Sané, or that teams have learned how to pressure Laporte more effectively.</p>
+    <figure class="uk-align-center uk-margin-top uk-width-3-4">
+      <img src="https://i.ibb.co/7RhH2cC/indvcity.jpg" alt="indvcity" border="0">
+    </figure>
+    <p class="uk-text-large">Stones and Dias have also proved to be the most stout pairing defensively. In the 14 games they have played 90 minutes together in a back four this season, City have conceded just 6 goals and kept 10 clean sheets. In the same number of games, a pairing involving a left footer and a right footer has conceded 17 goals.</p>
+    <p class="uk-text-large" style="margin-bottom:25px;">It shows that whilst there is often a benefit to be had from playing a left footer in central defence, it does not guarantee improvement. In the case of the FA Cup Semi Final, the stats suggest Pep got his decision wrong. City should have played Stones and Dias.</p>
+
+    <p class="uk-text-large">Having assisted Pep Guardiola at Manchester City for over 3 years, it is unsurprising that Mikel Arteta left sharing many of the same footballing philosophies, one of which was the left footed centre back. When he took over Arsenal in December 2019, one of his first requests was that the club buy a left footed centre back. After signing Pablo Marí in January 2020, he then bought in Gabriel Magalhães the next summer.</p>
+    <p class="uk-text-large">There has been an increase in both progressive passes and final third entries with a left footed centre back in the team. Arsenal also concede fewer goals with a left foot, right foot pairing, 0.86 per 90 minutes, as opposed to coneding 1.33 per 90 minutes with two right footers.</p>
+    <figure class="uk-align-center uk-margin-top uk-width-3-4">
+      <img src="https://i.ibb.co/rZVhd95/indvars.jpg" alt="indvars" border="0">
+    </figure>
+
+    <p class="uk-text-large" style="padding-top:25px;">For Tottenham, the absence of Jan Vertonghen is clearly felt. For the games he was in the team, Tottenham were far better progressing the ball and entering the final third, most noticably in 2019/20 where the team played 2 more progressive passes and had 3 more final third entries per game when he was on the pitch.</p>
+    <p class="uk-text-large">The loss of Vertonghen's all round quality both on and off the ball plays a factor in the drop off without him but he shows that having a left footed centre back who is good on the ball can help improve a team's play.</p>
+    <figure class="uk-align-center uk-margin-top uk-width-3-4">
+      <img src="https://i.ibb.co/c3KsMMr/indvtot.jpg" alt="indvtot" border="0">
+    </figure>
+
+    <p class="uk-text-large" style="padding-top: 25px;">The most noticable pattern amongst the defensive stats was the difference in interceptions. Each of the three teams make more interceptions per game when playing with a left footer and a right footer.</p>
+    <p class="uk-text-large">Similarly to when they are recieving the ball, a left footed centre back is able to open their body up to the play in a more natural way when defending an attack from wide areas, as well as being more comfortable leading with their left foot in a siutation where a right footer may try to make an interception with their stronger foot.</p>
+    <figure class="uk-align-center uk-margin-top uk-width-3-4">
+      <img src="https://i.ibb.co/qnJcLQr/Interceptions.jpg" alt="Interceptions" border="0">
+    </figure>
+    <p class="uk-text-large">With how close the other defensive stats, it is unlikely that interceptions alone will make a big enough difference for clubs to rush out and buy a left footed centre back, but it does demonstrate another area in which a team can get a small gain.</p>
+
+    <hr id="move" class="uk-article-divider">
+
+<!-- on the move section -->
+    <p class="uk-text-large" style="padding-bottom: 25px;">With the recent rise of the left footed centre back, clubs will spend the summer swarming to get their hands on one. Pau Torres, Benoît Badiashile and Lisandro Martínez are three left footed centre backs who could be on the move this summer:</p>
+    <p class="uk-text-large" style="font-weight: bold;">Pau Torres</p>
+    <p class="uk-text-large">Pau Torres has been excellent since breaking into the Villarreal team, helping propel them to a 5th place finish last season and a Europea League Semi Final this campaign, earning 6 Spain caps along the way.</p>
+    <p class="uk-text-large">Torres is an intelligent defender who reads the game well and has good technical quality on the ball to help him play passes under pressure.</p>
+    <p class="uk-text-large">Per 90 minutes, in comparison to Laporte, Torres is comparable at ball progression. He plays a lesser volume of passes, likely due to playing for Villarreal, so if he were to move, he would likely have more of the ball to showcase his technical ability.</p>
+    <table id="torres">
+      <tr>
+        <th>Name</th><th>Season</th><th>Passes Completed</th><th>Passes Attempted</th><th>Completion Percentage</th><th>Final Third Entries</th><th>Progressive Passes</th><th>Progressive Distance</th>
+      </tr>
+      <tr>
+        <td>Torres</td><td>2020/21</td><td>56.9</td><td>64.0</td><td>88.9%</td><td>4.46</td><td>4.32</td><td>422.3</td>
+      </tr>
+      <tr>
+        <td>Laporte</td><td>2020/21</td><td>76.0</td><td>83.1</td><td>91.5%</td><td>6.20</td><td>3.88</td><td>424.7</td>
+      </tr>
+    </table>
+    <p class="uk-text-large" style="padding-bottom: 25px;">Torres is only 24 and has room to futher improve but is ready to make the jump to a bigger club this summer. With a <a class="uk-link-text" href="https://www.manchestereveningnews.co.uk/sport/football/man-united-pau-torres-news-20002123">reported</a> release clause of around €60 million, he is the ideal signing for a team like Manchester United or Tottenham.</p>
+
+    <p class="uk-text-large" style="font-weight: bold;">Benoît Badiashile</p>
+    <p class="uk-text-large">Benoît Badiashile is a young, physically imposing centre back for Monaco, cementing himself as a regular starter in the team this season. Badiashile has helped Monaco climb to 3rd in Ligue Un after finishing 9th and 17th in the previous 2 seasons.</p>
+    <p class="uk-text-large">The 6ft 3 defender has only just turned 20, yet is dominant in the air and possess great recovery pace. He has also shown his comfort on the ball, making him an all round centre back depsite his young age.</p>
+    <p class="uk-text-large">In comparison to Laporte, per 90 minutes, Badiashile is comparible in ball progression, as with Torres, but like the Villerrael man, he plays a lesser volume of passes.</p>
+    <table id="Badiashile">
+      <tr>
+        <th>Name</th><th>Season</th><th>Passes Completed</th><th>Passes Attempted</th><th>Completion Percentage</th><th>Final Third Entries</th><th>Progressive Passes</th><th>Progressive Distance</th>
+      </tr>
+      <tr>
+        <td>Badiashile</td><td>2020/21</td><td>66.4</td><td>74.8</td><td>88.9%</td><td>5.78</td><td>4.86</td><td>467.9</td>
+      </tr>
+      <tr>
+        <td>Laporte</td><td>2020/21</td><td>76.0</td><td>83.1</td><td>91.5%</td><td>6.20</td><td>3.88</td><td>424.7</td>
+      </tr>
+    </table>
+    <p class="uk-text-large" style="padding-bottom: 25px;">Badiashile has a bright future ahead with his physicality and technical security. If David Alaba's move to Real Madrid falls through, they should turn to Badiashile as someone who still has plenty of room to grow. <a class="uk-link-text" href="https://www.transfermarkt.co.uk/benoit-badiashile/profil/spieler/463603">Transfermakt</a> values him at £25.2 million but his age and potenial will likely push that value up to £40-£50 million.
+
+    <p class="uk-text-large" style="font-weight: bold;">Lisandro Martínez</p>
+    <p class="uk-text-large">Lisandro Martínez has a style similar to Frenkie De Jong, effortless on the ball and always driving the team forward. Martínez has won the Eredivisie with Ajax in both of the seasons he has been with the club and has expierience in the Champions League as a result.</p>
+    <p class="uk-text-large">Martínez is not a particularly physical defender but he compensates with his superb ball playing ability. The Argentine spent a period in central midfield for Ajax last season as well as filling in at left back. This versatility has helped his transition to centre back as Martínez is excellent at defending the wide spaces which defenders can typically struggle with.</p>
+    <p class="uk-text-large">Due to playing in the Eredivisie, FBRef, and other sites, do not have all of his stats available. From the stats that are available, in comparison to Laporte, Martínez plays a higher volume of passes, highlighting his comfort in a high possession system. His progressive passes are not especially high given his volume so that is an area he would need to improve should he move to a bigger club.</p>
+      <table id="Martinez">
+        <tr>
+          <th>Name</th><th>Season</th><th>Passes Completed</th><th>Passes Attempted</th><th>Completion Percentage</th><th>Final Third Entries</th><th>Progressive Passes</th><th>Progressive Distance</th>
+        </tr>
+        <tr>
+          <td>Martinez</td><td>2020/21</td><td>81.5</td><td>90.97</td><td>89.6%</td><td>Unavailable</td><td>4.18</td><td>Unavailable</td>
+        </tr>
+        <tr>
+          <td>Laporte</td><td>2020/21</td><td>76.0</td><td>83.1</td><td>91.5%</td><td>6.20</td><td>3.88</td><td>424.7</td>
+        </tr>
+      </table>
+    <p class="uk-text-large">Martínez is 23 with experience of winning league titles and playing in the Champions League. His technical style fits that of a typical Barcelona player, however his versatility in defending wide spaces and ball carrying would suit Chelsea's high possession system perfectly. <a class="uk-link-text" href="https://www.transfermarkt.co.uk/lisandro-martinez/profil/spieler/480762">Transfermakt</a> values him at £19.8 million making him an affordable option for a big club this summer.</p>
+
+    <hr id="fin" class="uk-article-divider">
+
+    <p class="uk-text-large">For many years teams have sought to simply play the best player available in central defence, and that remains a the best option. Pep Guardiola caved to his desire to play a left foot, right foot pairing, overlooking the partinership that has been better for him this season.</p>
+    <p class="uk-text-large">However, the benefits of having a left footed centre back are becoming more and more appearent and they offer a way for teams to improve without having to own the best player available. Having someone who could help progress the quicker, further and more often can help the team in many ways and gives these players great value.</p>
+    <p class="uk-text-large" style="padding-bottom: 25px;">With the success Manchester City, Arsenal and Tottenham have had with left footed centre backs over recent years, expect more teams to follow suit.</p>
+</div>
+</div>
+
+<!-- footer -->
+<footer>
+  <div class="footertext">
+    <p class="uk-text-large">Writted and coded by Adam Perry</p>
+    <p class="uk-text-large">Data from <a class="uk-link-text" href="https://fbref.com/en/">FBRef</a></p>
+  </div>
+
+<!-- social links -->
+  <div class="socials">
+    <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Figor.gold.ac.uk%2F~aperr003%2Fidv%2Finteractivecw%2Fendchildfoodpoverty.html&text=Check%20out%20this%20page%20%23ENDCHILDFOODPOVERTY%3A%20"><img src="https://i.ibb.co/Rjt09Xg/twitter.jpg" height="50px" width="50px" alt="twitter" border="0"></a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=http://igor.gold.ac.uk/~aperr003/idv/interactivecw/endchildfoodpoverty.html" target="_blank"><img src="https://i.ibb.co/X8S21nJ/facebook.jpg" height="50px" width="50px" alt="facebook" border="0"></a>
+    <a href="https://api.whatsapp.com/send?text=Check%20out%20this%20page%20on%20%23ENDCHILDFOODPOVERTY%3A%20http%3A%2F%2Figor.gold.ac.uk%2F~aperr003%2Fidv%2Finteractivecw%2Fendchildfoodpoverty.html"><img src="https://i.ibb.co/ngv9cP5/whatsapp.jpg" height="50px" width="50px" alt="whatsapp" border="0"></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://igor.gold.ac.uk/~aperr003/idv/interactivecw/endchildfoodpoverty.html&title=#ENDCHILDFOODPOVERTY&summary=Check+out+this+page+on+ENDCHILDFOODPOVERTY&source=Adam+Perry"><img src="https://i.ibb.co/7zW4wLX/linkedin.jpg" height="50px" width="50px" alt="linkedin" border="0"></a>
+    <a href="mailto:%7Bemail_address%7D?subject=#ENDCHILDFOODPOVERTY&body=http://igor.gold.ac.uk/~aperr003/idv/interactivecw/endchildfoodpoverty.html%20Check%20out%20this%20page%20on%20#ENDCHILDFOODPOVERTY" target="_blank" rel="nofollow"><img src="https://i.ibb.co/JHQZJK4/email.jpg" height="50px" width="50px" alt="email" border="0"></a>
+  </div>
+</footer>
+
+  </body>
+</html>
