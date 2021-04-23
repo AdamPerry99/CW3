@@ -1,0 +1,82 @@
+#Clears the environment
+rm(list=ls())
+
+#Installing packages
+install.packages("")
+
+#Navigate working directories
+getwd()
+setwd("")
+
+--------------------------------------------------------------------------------
+#Load libraries
+library(ggplot2)
+library(dplyr)
+library(plotly)
+library(readr)
+library(ggrepel)
+
+
+#Load csv file
+data <- read_csv('data/dataper90.csv')
+
+--------------------------------------------------------------------------------
+
+#bar chart plot, setting up axis and establshing the chart type
+ggplot(data, aes(x = team, y = long_percentage, fill = combo)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  #labels
+  geom_text(aes(label=long_percentage_label), 
+            position=position_dodge(width=0.9), 
+            vjust=-0.25, 
+            size = 5,
+            color ="white") +
+  #colours
+  scale_fill_manual(values = c("#DE0C0C", "#3CB8FF")) +
+  #title/axis labels
+  labs(x = "Team",
+       y = "Percentage completed",
+       title = "Long passes per 90 minutes",
+       subtitle = "Playing 90 minutes in a back four since the start of the 2018/19 season") +
+  labs(fill = "Foot pairing") +
+  #defining the scales
+  scale_y_continuous(labels = scales::percent) +
+  coord_cartesian(ylim = c(0.65, 0.9)) +
+  #aesthetics
+  theme_minimal() +
+  theme(legend.position = "right", 
+        panel.grid.minor = element_blank(),
+        plot.background = element_rect(fill = "#141622"),
+        panel.background = element_rect(fill = "#141622", 
+                                        colour = "#141622",
+                                        size = 2, 
+                                        linetype = "solid"),
+        panel.grid.major = element_line(size = 0.5, 
+                                        linetype = 'solid',
+                                        colour = "gray30"),
+        axis.title.x = element_text(size = 18, 
+                                    face = "bold", 
+                                    colour = "white"),
+        axis.title.y = element_text(size = 18, 
+                                    face = "bold", 
+                                    colour = "white"),
+        axis.text.x = element_text(colour = "white",
+                                   size = "16"),
+        axis.text.y = element_text(colour = "white",
+                                   size = "16"),
+        plot.title = element_text(face = "bold", 
+                                  colour = "white", 
+                                  size = 20),
+        plot.subtitle = element_text(colour = "white", 
+                                     size = 18),
+        legend.title = element_text(colour = "white", 
+                                    size = 18),
+        legend.text = element_text(colour = "white",
+                                   size = 16)) 
+
+--------------------------------------------------------------------------------
+
+#pdf export
+pdf("")
+print()
+dev.off()
