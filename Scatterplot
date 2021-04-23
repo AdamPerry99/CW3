@@ -1,0 +1,81 @@
+#Clears the environment
+rm(list=ls())
+
+#Installing packages
+install.packages("")
+
+#Navigate working directories
+getwd()
+setwd("")
+
+--------------------------------------------------------------------------------
+#Load libraries
+library(ggplot2)
+library(dplyr)
+library(plotly)
+library(readr)
+library(ggrepel)
+
+
+#Load csv file
+data <- read_csv('data/indvteam.csv')
+
+
+--------------------------------------------------------------------------------
+
+  #establish plot and chart type
+ggplot(data=data, aes(x=final_third, y=progressive_passes, color=combo)) +
+  geom_point(size=4) +
+  #colours
+  scale_color_manual(values = c("#DE0C0C", "#3CB8FF")) +
+  #data labels
+  geom_text_repel(aes(label = team), 
+                  size = 3.5, 
+                  colour = "white",
+                  min.segment.length = Inf,
+                  nudge_y = 0.5) +
+  #axis/title labels
+  labs(x = "Final Third Entries",
+       y = "Progressive Passes",
+       title = "Progressive Passes and Final Third Entries by Man City Centre Backs",
+       colour = "Foot Pairing") +
+  #axis editing
+  expand_limits(x = c(9, 18), y = c(6, 12)) +
+  scale_x_continuous(breaks = seq(9, 18, 3)) +
+  scale_y_continuous(breaks = seq(6, 12, 2)) +
+  #aesthetics 
+  theme_minimal() +
+  theme(legend.position = "right", 
+        panel.grid.minor = element_blank(),
+        plot.background = element_rect(fill = "#141622"),
+        panel.background = element_rect(fill = "#141622", 
+                                        colour = "#141622",
+                                        size = 2, 
+                                        linetype = "solid"),
+        panel.grid.major = element_line(size = 0.5, 
+                                        linetype = 'solid',
+                                        colour = "gray30"),
+        axis.title.x = element_text(size = 12, 
+                                    face = "bold", 
+                                    colour = "white"),
+        axis.title.y = element_text(size = 12, 
+                                    face = "bold", 
+                                    colour = "white"),
+        axis.text.x = element_text(colour = "white"),
+        axis.text.y = element_text(colour = "white"),
+        plot.title = element_text(face = "bold", 
+                                  colour = "white", 
+                                  size = 14),
+        plot.subtitle = element_text(colour = "white", 
+                                     size = 12),
+        legend.title = element_text(colour = "white", 
+                                    size = 12),
+        legend.text = element_text(colour = "white",
+                                   size = 11)) 
+
+--------------------------------------------------------------------------------
+
+  #export pdf
+pdf("")
+print()
+dev.off()
